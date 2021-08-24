@@ -31,22 +31,21 @@ public class ContactController extends HttpServlet {
 		ContactDAO dao = new ContactDAOIMPL();
 		Contact contact = new Contact(user_ID,name,email, phone,message);
 		
-		//ContactDAO dao1 = new ContactDAOIMPL();
 		boolean status = dao.saveContact(contact);
 		
 		if(status)
-			out.println("Contact Saved Successfully");
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Contact Saved Successfully!');");
+			out.println("location='userDashboard.jsp';");
+		    out.println("</script>");
+		}
 		else
-			out.println("Try Again");
-		
-//		int contact_ID=Integer.parseInt(request.getParameter("contactid"));
-//		boolean stat= dao1.delete(contact_ID);
-//		if(stat)
-//		{
-//			response.sendRedirect("contactdisplay.jsp");
-//		}
-//		else {
-//			out.println("Contact could not be deleted!! Try Again!");
-//		}
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='contact.jsp';");
+		    out.println("</script>");
+		}
 	}
 }

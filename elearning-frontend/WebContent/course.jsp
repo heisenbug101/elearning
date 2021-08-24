@@ -8,8 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin | Courses</title>
 <style>
-body {
-	background-image: radial-gradient(#33B7FF, #5633ff);
+body{
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -23,8 +23,8 @@ body {
 	margin-left: 580px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -33,8 +33,8 @@ body {
 	margin-left: 580px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -43,8 +43,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -53,8 +53,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -109,12 +109,12 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover:not (.active ) {
-	background-color: #111;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
-	background-color: #33A1FF;
+	background-color: #F5B7B1;
 	color: black;
 }
 
@@ -134,11 +134,11 @@ li a:hover:not (.active ) {
 		<li><a href="feedbackdisplay.jsp">Feedbacks</a></li>
 		<li><a href="index.jsp" style="margin-left: 700px;">Log Out</a></li>
 	</ul>
-
+	<hr>
 	<!-- Display all the courses -->
 
 	<center>
-		<p class="heading">Courses</p>
+		<p class="heading">COURSES</p>
 	</center>
 	<%
 		try {
@@ -194,67 +194,58 @@ li a:hover:not (.active ) {
 					<button class="submitbutton" type="refresh">Refresh</button></form></TD>
 		</TR>
 	</TABLE>
-	
+	<hr>
 
 	<!-- Insert a course -->
 
 	<center>
-		<p class="heading">Add Course</p>
+		<p class="heading">ADD COURSE</p>
 	</center>
 	<form action="course" method="POST">
 		<pre>
     
-    <p class="txtfld">Course ID</p>
-			<input class="inputfld" type="text" name="courseId">
-    <p class="txtfld">Course Name</p>
-			<input class="inputfld" type="text" name="coursename">
-    <p class="txtfld">Course resources</p>
-			<input class="inputfld" type="text" name="courseres">
-    <p class="txtfld">Course description</p>
-			<input class="inputfld" type="text" name="coursedesc">
-    <p class="txtfld">Course Fees</p>
-			<input class="inputfld" type="number" name="course_fees"><br>
+    <p class="txtfld">Course ID</p> <input class="inputfld" type="text" name="courseId">
+    <p class="txtfld">Course Name</p> <input class="inputfld" type="text" name="coursename">
+    <p class="txtfld">Course resources</p> <input class="inputfld" type="text" name="courseres">
+    <p class="txtfld">Course description</p> <input class="inputfld" type="text" name="coursedesc">
+    <p class="txtfld">Course Fees</p> <input class="inputfld" type="number" name="course_fees"><br>
     <input class="deletebutton" type="submit" value="Add course"><br>
                 
      
     </pre>
 	</form>
-
+	<hr>
+	
 	<!--  Update an existing course -->
 	</form>
 	<center>
-		<p class="heading">Update Existing Course</p>
+		<p class="heading">UPDATE EXISTING COURSE</p>
 	</center>
 	<form action="courseupdate" method="POST">
 		<pre>
-    <p class="txtfld">Course ID</p>
-			<input class="inputfld" type="number" name="courseid"><br>
-    <p class="txtfld">Course Name</p>
-			<input class="inputfld" type="text" name="coursename">
-    <p class="txtfld">Course resources</p>
-			<input class="inputfld" type="text" name="courseres">
-    <p class="txtfld">Course description</p>
-			<input class="inputfld" type="text" name="coursedesc">
-    <p class="txtfld">Course Fees</p>
-			<input class="inputfld" type="number" name="course_fees"><br>
-    <input class="deletebutton" type="submit" value="Update Course"><br>
+    <p class="txtfld">Course ID</p> <input class="inputfld" type="number" name="courseid"><br>
+    <p class="txtfld">Course Name</p> <input class="inputfld" type="text" name="coursename">
+    <p class="txtfld">Course resources</p> <input class="inputfld" type="text" name="courseres">
+    <p class="txtfld">Course description</p> <input class="inputfld" type="text" name="coursedesc">
+    <p class="txtfld">Course Fees</p> <input class="inputfld" type="number" name="course_fees"><br>
+    <input class="deletebutton" type="submit" value="Update course"><br>
                 
      
     </pre>
 	</form>
+	<hr>
 
 	<!-- Delete a course -->
 	<center>
-		<p class="heading">Delete Course</p>
+		<p class="heading">DELETE COURSE</p>
 	</center>
 	<form action="coursedel" method="POST">
 		<pre>      
-     <p class="txtfld">Course ID</p>
-			<input class="inputfld" type="number" name="courseid">
+     <p class="txtfld">Course ID</p> <input class="inputfld" type="number" name="courseid">
      	<input class="deletebutton" type="submit" value="Delete course"><br>
     </pre>
 	</form>
-
+	<hr>
 
 </body>
 </html>

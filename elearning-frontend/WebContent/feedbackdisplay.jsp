@@ -8,8 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin | Feedbacks</title>
 <style>
-body {
-	background-image: radial-gradient(#33B7FF, #5633ff);
+body{
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -23,8 +23,8 @@ body {
 	margin-left: 600px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -33,8 +33,8 @@ body {
 	margin-left: 600px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -43,8 +43,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -53,8 +53,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -109,12 +109,12 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover:not (.active ) {
-	background-color: #111;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
-	background-color: #33A1FF;
+	background-color: #F5B7B1;
 	color: black;
 }
 
@@ -137,9 +137,9 @@ li a:hover:not (.active ) {
 
 	
 	<!-- Display all feedbacks -->
-	
+	<hr>
 	<center>
-		<p class="heading">Feedback Database</p>
+		<p class="heading">FEEDBACKS</p>
 	</center>
 	<%
 		try {
@@ -199,21 +199,21 @@ li a:hover:not (.active ) {
 					<button class="submitbutton" type="refresh">Refresh</button></FORM></TD>
 		</TR>
 	</TABLE>
-	
+	<hr>
 	<!-- Delete a feedback -->
 	
 	<center>
-		<p class="heading">Delete Feedback</p>
+		<p class="heading">DELETE FEEDBACK</p>
 	</center>
 	<form action="feedbackdel" method="POST">
 		<pre>
  
-     <p class="txtfld">Feedback ID</p>
-			<input class="inputfld" type="number" name="feedbackid">
+     <p class="txtfld">Feedback ID</p> <input class="inputfld" type="number" name="feedbackid">
      	<input class="deletebutton" type="submit" value="Delete Feedback"><br>
                 
      
     </pre>
 	</form>
+	<hr>
 </body>
 </html>

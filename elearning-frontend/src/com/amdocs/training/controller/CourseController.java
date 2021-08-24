@@ -36,9 +36,19 @@ public class CourseController extends HttpServlet {
 		boolean status = dao.saveCourse(course);
 		
 		if(status)
-			response.sendRedirect("course.jsp");
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Course Saved Successfully!');");
+			out.println("location='course.jsp';");
+		    out.println("</script>");
+		}
 		else
-			out.println("Try Again");
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='course.jsp';");
+		    out.println("</script>");
+		}
 		
 		
 	

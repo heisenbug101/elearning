@@ -37,24 +37,6 @@ margin-top: 50px;
 	border-radius:5px;
 	margin-top: 20px;
 }
-.deletebutton{
-	margin-left:500px;
-	padding:8px;
-	font-size:20px;
-	color: #C0392B;
-	background-color: white;
-	border-radius:5px;
-	margin-top: 20px;
-}
-.deletebutton:hover{
-	margin-left:500px;
-	padding:8px;
-	font-size:20px;
-	color: white;
-	background-color: #641E16;
-	border-radius:5px;
-	margin-top: 20px;
-}
 .inputfld{
 	margin-left: 430px;
 	padding: 5px;
@@ -125,7 +107,8 @@ li a:hover:not(.active) {
   <li><a href="userUpdate.jsp">Update Profile</a></li>
   <li><a href="index.jsp" style="margin-left:850px;">Logout</a></li>
 </ul>
-    <center><p class="heading">e-Learning Courses</p></center> 
+<hr>
+    <center><p class="heading">eLEARNING COURSES</p></center> 
 <%
 try {
 /* Create string of connection url within specified format with machine
@@ -186,5 +169,6 @@ out.println("Unable to connect to database.");
 %>
 </TABLE>
 </font>
+<hr>
 </body>
 </html>

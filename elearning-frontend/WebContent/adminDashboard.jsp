@@ -7,7 +7,7 @@
 <title>Admin</title>
 <style>
 body{
-	background-image: radial-gradient(#33B7FF,#5633ff);
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -19,8 +19,8 @@ margin-top: 50px;
 	margin-left:460px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -28,8 +28,8 @@ margin-top: 50px;
 	margin-left:460px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -84,7 +84,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #33A1FF;
+  background-color: #F5B7B1;
   color: black;
 }
 </style>
@@ -99,7 +99,7 @@ li a:hover:not(.active) {
   <li><a href="index.jsp" style="margin-left:700px;">Log Out</a></li>
 </ul>
 
-<center><p class="heading">e-Learning Portal</p></center>
+<center><p class="heading"><b>e-Learning Portal</b></p></center>
 <center><p class="heading">Welcome back Admin</p></center>
 <center><p class="heading">Please use the nav bar to navigate through the sections.</p></center>
 </body>

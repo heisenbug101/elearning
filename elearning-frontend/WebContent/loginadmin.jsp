@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Administrator Login</title>
+<title>Login | Admin</title>
 <style>
 body{
-	background-image: radial-gradient(#33B7FF,#5633ff);
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -19,8 +19,8 @@ margin-top: 50px;
 	margin-left:465px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -28,8 +28,8 @@ margin-top: 50px;
 	margin-left:465px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -61,7 +61,7 @@ margin-top: 50px;
 </style>
 </head>
 <body>
-<center><p class="heading">Administrator Login</p></center>
+<center><p class="heading"><b>ADMINISTRATOR LOGIN</b></p></center>
 
 <form action="admin" method="POST">
     <pre>

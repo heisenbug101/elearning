@@ -20,23 +20,28 @@ public class CourseUpdateController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
-		
-		int course_ID=Integer.parseInt(request.getParameter("courseid"));
+
+		int course_ID = Integer.parseInt(request.getParameter("courseid"));
 		String coursename = request.getParameter("coursename");
-		String courseres=request.getParameter("courseres");
+		String courseres = request.getParameter("courseres");
 		int coursefee = Integer.parseInt(request.getParameter("course_fees"));
-		String coursedesc= request.getParameter("coursedesc");
-		
+		String coursedesc = request.getParameter("coursedesc");
+
 		CourseDAO dao = new CourseDAOIMPL();
-		Course course = new Course(course_ID,coursename,courseres,coursedesc,coursefee);
-		
-		
-		
-		boolean status = dao.update(course,course_ID);
-		
-		if(status)
-			response.sendRedirect("course.jsp");
-		else
-			out.println("Try Again");
+		Course course = new Course(course_ID, coursename, courseres, coursedesc, coursefee);
+
+		boolean status = dao.update(course, course_ID);
+
+		if (status) {
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Course Updated Successfully!');");
+			out.println("location='course.jsp';");
+			out.println("</script>");
+		} else {
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='course.jsp';");
+			out.println("</script>");
+		}
 	}
 }

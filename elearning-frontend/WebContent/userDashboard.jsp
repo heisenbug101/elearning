@@ -98,7 +98,7 @@ li a:hover:not(.active) {
   <li><a href="userUpdate.jsp">Update Profile</a></li>
   <li><a href="index.jsp" style="margin-left:850px;">Logout</a></li>
 </ul>
-<center><p class="heading">e-Learning Portal</p></center>
+<center><p class="heading"><b>e-Learning Portal</b></p></center>
 <center><p class="heading">Welcome back User</p></center>
 <center><p class="heading">Please use the nav bar to navigate through the sections.</p></center>
 </body>

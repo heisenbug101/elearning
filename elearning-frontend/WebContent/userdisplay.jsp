@@ -8,8 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin | Users</title>
 <style>
-body {
-	background-image: radial-gradient(#33B7FF, #5633ff);
+body{
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -23,8 +23,8 @@ body {
 	margin-left: 580px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -33,8 +33,8 @@ body {
 	margin-left: 580px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -43,8 +43,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -53,8 +53,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -109,12 +109,12 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover:not (.active ) {
-	background-color: #111;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
-	background-color: #33A1FF;
+	background-color: #F5B7B1;
 	color: black;
 }
 
@@ -134,17 +134,15 @@ li a:hover:not (.active ) {
 		<li><a href="feedbackdisplay.jsp">Feedbacks</a></li>
 		<li><a href="index.jsp" style="margin-left: 700px;">Log Out</a></li>
 	</ul>
-	
+	<hr>
 	<!-- Display all users -->
 	
 	<center>
-		<p class="heading">Users</p>
+		<p class="heading">USERS</p>
 	</center>
-	<%
+	<% 
 		try {
-			/* Create string of connection url within specified format with machine
-			name, port number and database name. Here machine name id localhost and 
-			database name is student. */
+			
 			String connectionURL = "jdbc:mysql://localhost:3306/e_learning";
 			// declare a connection by using Connection interface
 			Connection connection = null;
@@ -214,20 +212,20 @@ li a:hover:not (.active ) {
 		</TR>
 	</TABLE>
 	
-	
+	<hr>
 	<!-- Delete a User -->
 	
 	<center>
-		<p class="heading">Delete User</p>
+		<p class="heading">DELETE USER</p>
 	</center>
 	<form action="userdelete" method="POST">
 		<pre>
                
-     <p class="txtfld">User ID</p>
-			<input class="inputfld" type="number" name="userid">
+     <p class="txtfld">User ID</p> <input class="inputfld" type="number" name="userid">
      	<input class="deletebutton" type="submit" value="Delete user"><br>     
      
     </pre>
 	</form>
+	<hr>
 </body>
 </html>

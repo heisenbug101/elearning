@@ -9,8 +9,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Admin | Contacts</title>
 <style>
-body {
-	background-image: radial-gradient(#33B7FF, #5633ff);
+body{
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -24,8 +24,8 @@ body {
 	margin-left: 600px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -34,8 +34,8 @@ body {
 	margin-left: 600px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -44,8 +44,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -54,8 +54,8 @@ body {
 	margin-left: 500px;
 	padding: 8px;
 	font-size: 20px;
-	color: midnightblue;
-	background-color: cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -110,12 +110,12 @@ li a {
 	text-decoration: none;
 }
 
-li a:hover:not (.active ) {
-	background-color: #111;
+li a:hover:not(.active) {
+  background-color: #111;
 }
 
 .active {
-	background-color: #33A1FF;
+	background-color: #F5B7B1;
 	color: black;
 }
 
@@ -137,10 +137,10 @@ li a:hover:not (.active ) {
 	</ul>
 
 	<!-- Display all contacts -->
-
+	<hr>
 
 	<center>
-		<p class="heading">Contacts</p>
+		<p class="heading">CONTACTS</p>
 	</center>
 	<%
 		try {
@@ -203,17 +203,17 @@ li a:hover:not (.active ) {
 
 
 	<!-- Delete a contact -->
-
+	<hr>
 	<center>
-		<p class="heading">Delete Contact</p>
+		<p class="heading">DELETE CONTACT</p>
 	</center>
 
 	<form action="contactdel" method="POST">
 		<pre>
-     <p class="txtfld">Contact ID</p>
-			<input class="inputfld" type="number" name="contactid">
+     <p class="txtfld">Contact ID</p> <input class="inputfld" type="number" name="contactid">
      	<input class="deletebutton" type="submit" value="Delete contact"><br>      
     </pre>
 	</form>
+	<hr>
 </body>
 </html>

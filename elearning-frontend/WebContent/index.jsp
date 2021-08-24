@@ -31,7 +31,7 @@ margin-top: 50px;
 	padding:15px;
 	font-size:20px;
 	color: white;
-	background-color:#641E16;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -57,7 +57,7 @@ margin-top: 50px;
 </style>
 </head>
 <body>
-<center><p class="heading"><b>e-Learning Home</b></p></center>
+<center><p class="heading"><b>e-LEARNING HOME</b></p></center>
 
 <br><br><br>
 

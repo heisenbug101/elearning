@@ -14,7 +14,7 @@ import com.amdocs.project.dao.impl.FeedbackDAOIMPL;
 import com.amdocs.project.model.Feedback;
 
 @WebServlet("/feedbackdel")
-public class FeedbackDelete extends HttpServlet {
+public class FeedbackDeleteController extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -31,11 +31,19 @@ public class FeedbackDelete extends HttpServlet {
 		boolean status = dao.delete(feedback_ID);
 		
 		if(status)
-			response.sendRedirect("feedbackdisplay.jsp");
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Feedback Deleted Successfully!');");
+			out.println("location='feedbackdisp.jsp';");
+		    out.println("</script>");
+		}
 			
 		else
 		{
-			out.println("Try Again");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='feedbackdisp.jsp';");
+		    out.println("</script>");
 		}
 	}
 	

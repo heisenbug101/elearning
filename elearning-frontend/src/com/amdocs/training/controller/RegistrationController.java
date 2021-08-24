@@ -38,13 +38,18 @@ public class RegistrationController extends HttpServlet {
 		
 		if(status)
 		{
-			out.println("User Saved Successfully");
-			response.sendRedirect("loginuser.jsp");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='loginuser.jsp';");
+		    out.println("</script>");
 		}
 			
-			
-		else {
-			out.println("Try Again");
+		else 
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='register.jsp';");
+		    out.println("</script>");
 		}
 	}
 	

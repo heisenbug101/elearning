@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registration Page</title>
+<title>Register</title>
 <style>
 body{
-	background-image: radial-gradient(#33B7FF,#5633ff);
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -19,8 +19,8 @@ margin-top: 50px;
 	margin-left:450px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -28,8 +28,8 @@ margin-top: 50px;
 	margin-left:450px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -37,8 +37,8 @@ margin-top: 50px;
 	margin-left:30px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -46,8 +46,8 @@ margin-top: 50px;
 	margin-left:30px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -79,7 +79,7 @@ margin-top: 50px;
 </style>
 </head>
 <body>
-<center><p class="heading">User Registration</p></center>
+<center><p class="heading"><b>REGISTER NEW USER</b></p></center>
 <form action="register" method="POST">
     <pre>
     <p class="txtfld">User ID</p> <input class="inputfld1" type="number" name="userid">
@@ -89,7 +89,7 @@ margin-top: 50px;
     <p class="txtfld">Address</p><input class="inputfld" type="text" name="address">
     <p class="txtfld">Phone Number</p><input class="inputfld" type="number" name="phone">
     <p class="txtfld">Image</p><input class="inputfld" type="text" name="image">
-    <p class="txtfld">Present Date</p><input class="inputfld" type="text" name="date"><br>
+    <p class="txtfld">Date</p><input class="inputfld" type="text" name="date"><br>
                 <input class="submitbutton" type="submit" value="Register">  <input class="resetbutton" type="reset" value="Reset"><br>
     </pre>
 </form>

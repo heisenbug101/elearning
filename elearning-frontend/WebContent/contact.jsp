@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Contact Page</title>
+<title>User | Contact Us</title>
 <style>
 body{
-	background-image: radial-gradient(#33B7FF,#5633ff);
+	background-color: #DE3163;
 	color: white;
 	height: 100vh;
 }
@@ -19,8 +19,8 @@ margin-top: 50px;
 	margin-left:460px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:lightblue;
+	color: #C0392B;
+	background-color: white;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -28,8 +28,8 @@ margin-top: 50px;
 	margin-left:460px;
 	padding:8px;
 	font-size:20px;
-	color: midnightblue;
-	background-color:cyan;
+	color: white;
+	background-color: #641E16;
 	border-radius:5px;
 	margin-top: 20px;
 }
@@ -84,7 +84,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #33A1FF;
+  background-color: #F5B7B1;
   color: black;
 }
 </style>
@@ -98,18 +98,20 @@ li a:hover:not(.active) {
   <li><a href="userUpdate.jsp">Update Profile</a></li>
   <li><a href="index.jsp" style="margin-left:850px;">Logout</a></li>
 </ul>
-<center><p class="heading">Contact Us</p></center>
+<hr>
+<center><p class="heading">CONTACT US</p></center>
 
 <form action="contact" method="POST">
     <pre>
     <p class="txtfld">User ID</p> <input class="inputfld1" type="number" name="userid">
-    <p class="txtfld">Name</p><input class="inputfld" type="text" name="name">
-    <p class="txtfld">Email</p><input class="inputfld" type="email" name="email">
-    <p class="txtfld">Phone Number</p><input class="inputfld" type="number" name="phone">
-    <p class="txtfld">Message</p><input class="inputfld" type="text" name="message">
+    <p class="txtfld">Name</p> <input class="inputfld" type="text" name="name">
+    <p class="txtfld">Email</p> <input class="inputfld" type="email" name="email">
+    <p class="txtfld">Phone Number</p> <input class="inputfld" type="number" name="phone">
+    <p class="txtfld">Message</p> <input class="inputfld" type="text" name="message">
     
                 <input class="submitbutton" type="submit" value="Submit"><br>
     </pre>
 </form>
+<hr>
 </body>
 </html>

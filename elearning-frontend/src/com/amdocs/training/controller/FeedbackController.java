@@ -34,11 +34,19 @@ public class FeedbackController extends HttpServlet {
 		boolean status = dao.saveFeedback(feedback);
 		
 		if(status)
-			out.println("Feedback Saved Successfully");
+		{
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Feedback Saved Successfully!');");
+			out.println("location='feedbackdisp.jsp';");
+		    out.println("</script>");
+		}
 			
 		else
 		{
-			out.println("Try Again");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='feedbackdisp.jsp';");
+		    out.println("</script>");
 		}
 	}
 	

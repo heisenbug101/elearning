@@ -15,7 +15,7 @@ import com.amdocs.project.model.User;
 
 
 @WebServlet("/userdelete")
-public class UserDelete extends HttpServlet {
+public class UserDeleteController extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -30,10 +30,16 @@ public class UserDelete extends HttpServlet {
 		boolean stat= dao1.delete(user_ID);
 		if(stat)
 		{
-			response.sendRedirect("userdisplay.jsp");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('User Deleted Successfully!');");
+			out.println("location='userdisplay.jsp';");
+		    out.println("</script>");
 		}
 		else {
-			out.println("Could not delete User!! Try Again!");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='userdisplay.jsp';");
+		    out.println("</script>");
 		}
 	}
 	

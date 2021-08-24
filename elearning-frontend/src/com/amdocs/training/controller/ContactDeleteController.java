@@ -14,7 +14,7 @@ import com.amdocs.project.dao.impl.ContactDAOIMPL;
 import com.amdocs.project.model.Contact;
 
 @WebServlet("/contactdel")
-public class ContactDelete extends HttpServlet {
+public class ContactDeleteController extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -28,12 +28,17 @@ public class ContactDelete extends HttpServlet {
 		
 		
 		boolean stat= dao1.delete(contact_ID);
-		if(stat)
-		{
-			response.sendRedirect("contactdisplay.jsp");
-		}
+		if(stat) {
+				out.println("<script type=\"text/javascript\">");
+				out.println("alert('Contact Deleted Successfully!');");
+				out.println("location='contactdisplay.jsp';");
+			    out.println("</script>");
+		}		
 		else {
-			out.println("Contact could not be deleted!! Try Again!");
+			out.println("<script type=\"text/javascript\">");
+			out.println("alert('Error! Try Again.');");
+			out.println("location='contactdisplay.jsp';");
+		    out.println("</script>");
 		}
 	}
 }
